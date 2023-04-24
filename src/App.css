@@ -5,17 +5,26 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
-.App {
-  text-align: center;
+:root {
+  --background-color-body: #f2e9e4;
+  --color-font: #262632;
+  --background-color-bottom: #b4b4b4;
+  --icon-profile-background: #171825;
+  --icon-profile-font:var(--background-color-body);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dark-mode:root {
+  --background-color-body: #262632;
+  --color-font: #f2e9e4;
+  --background-color-bottom: #171825;
+  --icon-profile-background: var(--color-font);
+  --icon-profile-font: var(--background-color-bottom);
+}
+
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--background-color-bottom);
+  min-height: 100vh;
 }
