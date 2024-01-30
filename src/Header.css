@@ -1,4 +1,4 @@
-input[type=checkbox]{
+input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -19,7 +19,7 @@ label {
   background-size: 14px;
 }
 
-label::after{
+label::after {
   content: '';
   position: absolute;
   top: 7px;
@@ -31,7 +31,7 @@ label::after{
   transition: 0.3s;
 }
 
-input:checked + label {
+input:checked+label {
   background-image: url(assets/icon_moon.svg);
   background-color: #262632;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ input:checked + label {
   background-size: 13px;
 }
 
-input:checked + label::after {
+input:checked+label::after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
   background-color: #f2e9e4;

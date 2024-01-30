@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./Header";
-import SobreMim from "./SobreMim";
+import Header from "./Header.jsx";
+import SobreMim from "./SobreMim.jsx";
 
 function App() {
   return (

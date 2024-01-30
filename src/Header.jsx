@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable jsx-a11y/label-has-associated-control */
+// import React from "react";
 import "./Header.css";
 
 function Header() {
@@ -21,8 +22,8 @@ function Header() {
           type="checkbox"
           name="theme"
           onChange={switchTheme}
-        ></input>
-        <label htmlFor="switch"></label>
+        />
+        <label htmlFor="switch" />
         <p>A</p>
       </div>
     </header>
